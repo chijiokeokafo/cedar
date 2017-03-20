@@ -33,11 +33,13 @@ svg {
 	max-height: 100%;
 }
 /* GLOBAL LAYOUT */
+// html, body {padding:0; margin:0; height:100%;}
 body{
 	background-color: #FAF9E4;
 	color: #005151;
 	word-wrap: break-word;
 	margin: 0;
+	max-width: 1680px;
 	font-family: helvetica, arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
@@ -187,4 +189,71 @@ header.entry-header { display: none; }
 
 /*---------------------------------------------
 FOOTER
----------------------------------------------
+// ------------------------------------------*/
+
+footer {
+	// position: absolute;
+	// bottom: -2030px;
+	width: 100%;
+	padding-top: 45px;
+	padding-bottom: 40px;
+	padding-left: 100px;
+	background-color: #00928a;
+	background-image: url("images/footer-leaf.png");
+	background-repeat: no-repeat;
+    background-position: right 90.5%;
+	height: auto;
+	color: white;
+}
+
+footer .connect {
+	width: 40%;
+	height: 170px;
+	border-right: 1px solid #fff;
+}
+
+footer img { float: left; }
+
+#right-column {
+float: left;
+width: 50%;
+display: block;
+height:inherit;
+}
+
+#left-column {
+float: left;
+width: 50%;
+height:inherit;
+}
+.footer-copy {
+	margin-top: -160px;
+	width: 50%;
+	float: right;
+}
+
+/*---------------------------------------------
+PATIENTS
+// ------------------------------------------*/
+
+.page-header{
+	width: 100%;
+	background-color: #00928a;
+	color: white;
+	padding: 30px 80px;
+}
+
+.patients-section-one {
+	width: 100%;
+	height: auto;
+	background-color: #f9f7e3;
+	padding: 30px 80px;
+}
+.patients-section-one p {
+	width: 50%;
+}
+.symptoms {
+    column-count: 2;
+    column-gap: 20px;
+}
+
