@@ -20,6 +20,25 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .clearfix:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0; } .clearfix {display: inline-block; } html[xmlns] .clearfix {display: block; } * html .clearfix {height: 1%; } 
+
+// FONTS
+@font-face {
+	font-family: NeueHaasUnicaProBlack;  
+	src: url(fonts/NeueHaasUnicaProBlack.ttf);  
+	font-weight: normal;  
+}
+@font-face {
+	font-family: NeueHaasUnicaProMed;  
+	src: url(fonts/NeueHaasUnicaProMed.ttf);  
+	font-weight: normal;  
+}
+@font-face {
+	font-family: NeueHaasUnicaProBold;  
+	src: url(fonts/NeueHaasUnicaProBold.ttf);  
+	font-weight: normal;  
+}
+
+
 /* GLOBAL IMAGE SIZING */
 img {
   max-width:100%;
@@ -38,8 +57,10 @@ body{
 	background-color: #FAF9E4;
 	color: #005151;
 	word-wrap: break-word;
-	margin: 0;
+	display: block;
+	margin: 0 auto;
 	max-width: 1680px;
+	overflw-x: hidden;
 	font-family: helvetica, arial, sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
@@ -86,19 +107,23 @@ header.site-header {
 	width: 100%;
 	height: 500px;
 	margin-top: 60px;
-	margin-left: 100px;
+	// margin-left: 100px;
 }
-header .site-title { display: none; }
+header .wrap { display: none; }
+
+.site-header { background-position: center center !important; }
 
 /*---------------------------------------------
 NAVIGATION
 ---------------------------------------------*/
 
+nav .wrap { max-width: 100%}
 nav.nav-primary{
 	align-items: center;
 	flex-direction: row;
 	width: 100%;
   	background: #f68f6b;
+  	border: none;
 }
 
 ul.menu{
@@ -110,10 +135,11 @@ ul.menu{
 ul.menu li{
 	list-style-type: none;
 	display: inline;
-	flex: 1;
+	// flex: 1;
+	flex-grow: 1;
 }
 nav .genesis-nav-menu a {
-	padding: 15px 0px 15px 0px;
+	padding: 15px 0px 18px 0px;
 	text-align: center;
 	color: #fff;
 }
@@ -175,6 +201,7 @@ header.entry-header { display: none; }
 	margin: 0 auto;
 	width: 70%;
 	color: #fff;
+	font-family: 'NeueHaasUnicaProMed';
 }
 
 .home-bottom {
@@ -204,6 +231,7 @@ footer {
     background-position: right 90.5%;
 	height: auto;
 	color: white;
+	font-family: 'NeueHaasUnicaProBold';
 }
 
 footer .connect {
@@ -213,6 +241,7 @@ footer .connect {
 }
 
 footer img { float: left; }
+footer h1 {font-family: 'NeueHaasUnicaProBold';}
 
 #right-column {
 float: left;
@@ -230,6 +259,7 @@ height:inherit;
 	margin-top: -160px;
 	width: 50%;
 	float: right;
+	font-family: 'NeueHaasUnicaProBold';
 }
 
 /*---------------------------------------------
@@ -239,8 +269,14 @@ PATIENTS
 .page-header{
 	width: 100%;
 	background-color: #00928a;
-	color: white;
+	font-family: 'NeueHaasUnicaProBold';
+	color: #fff;
 	padding: 30px 80px;
+}
+
+.page-header h1 {
+	font-family: 'NeueHaasUnicaProBold';
+	color: #fff;
 }
 
 .patients-section-one {
@@ -251,9 +287,62 @@ PATIENTS
 }
 .patients-section-one p {
 	width: 50%;
+	font-family: 'NeueHaasUnicaProMed';
+	color: #004b45;
+  
+}
+.patients-section-one img {
+	position: relative;
+	top: 20%;
+	right: 10%;
+
 }
 .symptoms {
     column-count: 2;
     column-gap: 20px;
 }
+li { 
+	font-family: "NeueHaasUnicaProMed"; 
+	color: #004b45;
+}
+
+img .med-sym {
+    position: relative;
+    top: -239px;
+    right: -940px;
+    width: 40%;
+}
+
+
+/*---------------------------------------------
+FAQ
+// ------------------------------------------*/
+.question {
+	background-color: #f68f6b;
+	padding: 10px 10px 5px 60px;
+	color: #fff;
+	font-family: 'NeueHaasUnicaProBold';
+}
+.answer {
+	background-color: #f9f7e3;
+	padding: 20px 10px 5px 96px;
+	color: rgb(0, 75, 69);
+	font-family: 'NeueHaasUnicaProMed';
+}
+.answer p {
+	width: 82%;
+	font-size: 16px;
+}
+
+/*---------------------------------------------
+LOCATIONS
+// ------------------------------------------*/
+.map { 
+	padding-bottom: 20px; 
+	background-color: #f9f7e3;
+}
+
+
+
+
 
