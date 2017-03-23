@@ -99,19 +99,45 @@ p{
 	margin: 0 0 20px;
 }*/
 
+
 /*---------------------------------------------
 HEADER
 ---------------------------------------------*/
 
 header.site-header {
-	width: 100%;
-	height: 500px;
-	margin-top: 60px;
-	// margin-left: 100px;
+// 	width: 100%;
+	// height: 500px;
+// 	min-height: 110px;
+// 	margin-top: 20px;
+// 	// margin-left: 100px;
+min-height: 90px;
+/* border-bottom: 1px solid #eee; */
+margin-top: 20px;
 }
 header .wrap { display: none; }
 
-.site-header { background-position: center center !important; }
+.site-header {
+    
+}
+
+body.home header.site-header {
+	background-image: url("images/header.jpg");
+	background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+	height: 500px;
+}
+
+header.site-header {
+	background-image: url("images/logo-small.png");
+	background-repeat: no-repeat;
+    // background-attachment: fixed;
+    // background-size: contain;
+    // background-position: center;
+	height: 110px;
+}
+// .site-header { background-position: center center !important; }
 
 /*---------------------------------------------
 NAVIGATION
@@ -175,6 +201,11 @@ header.entry-header { display: none; }
 	width: 100%;
 	height: 410px;
 	background-color: #f9f7e3;
+	background-image: url("images/test.png");
+	background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-size: contain;
+    background-position: 90% center;
 }
 .home-top .copy {
 	width: 50%;
@@ -194,11 +225,14 @@ header.entry-header { display: none; }
 	height: auto;
 	background-color: #f68f6b;
 	text-align: center;
-	padding: 50px 10px;
+	padding: 50px 10px 100px;
+	background-image: url("images/section-head.jpg");
+	background-repeat: no-repeat;
+    background-position: center top;
 }
 .home-orange p {
 	display: block;
-	margin: 0 auto;
+	margin: 450px auto 0;
 	width: 70%;
 	color: #fff;
 	font-family: 'NeueHaasUnicaProMed';
@@ -214,6 +248,12 @@ header.entry-header { display: none; }
 	padding: 70px 70px 70px 257px;;
 }
 
+button#portal-btn{
+	background-color: #f68f6b;
+}
+button#portal-btn:hover{
+	background-color: #e26846; 
+}
 /*---------------------------------------------
 FOOTER
 // ------------------------------------------*/
@@ -296,6 +336,20 @@ PATIENTS
 	top: 20%;
 	right: 10%;
 
+}
+.orange {
+	width: 100%;
+	height: auto;
+	background-color: #f68f6b;
+	text-align: center;
+    padding: 30px;
+}
+.orange p {
+	display: block;
+	margin: 0 auto;
+	width: 70%;
+	color: #fff;
+	font-family: 'NeueHaasUnicaProMed';
 }
 .symptoms {
     column-count: 2;

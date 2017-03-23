@@ -41,12 +41,12 @@ add_theme_support( 'custom-header' );
 function whitecedar_custom_header_setup() {
     $defaults = array(
         // Default Header Image to display
-        'default-image'         => get_template_directory_uri() . 'images/header.jpg',
+        // 'default-image'         => get_template_directory_uri() . 'images/header.jpg',
         // Display the header text along with the image
         'header-text'           => false,
         // Header text color default
         'default-text-color'        => '000',
-        // Header image width (in pixels)
+        // // Header image width (in pixels)
         'width'             => '1369',
         'height'             => '492',
         // Enable upload of image file in admin 
@@ -58,13 +58,13 @@ function whitecedar_custom_header_setup() {
         // function to produce preview markup in the admin screen
         'admin-preview-callback'    => 'adminpreview_cb',
     );
-    $args = array(
-        'flex-width'    => true,
-        'width'         => 1369,
-        'flex-height'   => true,
-        'height'        => 492,
-        'default-image' => get_template_directory_uri() . '/images/header.jpg',
-    );
+    // $args = array(
+    //     'flex-width'    => true,
+    //     'width'         => 1369,
+    //     'flex-height'   => true,
+    //     'height'        => 492,
+    //     'default-image' => get_template_directory_uri() . '/images/header.jpg',
+    // );
     add_theme_support( 'custom-header', $args );
 }
 add_action( 'after_setup_theme', 'whitecedar_custom_header_setup' );
@@ -88,3 +88,9 @@ function wpb_hidetitle_class($classes) {
 
 add_filter('post_class', 'wpb_hidetitle_class');
 
+// if (is_front_page() ) {
+//        get_header( 'front' );
+
+// } else {
+//        get_header('custom-header');
+// }

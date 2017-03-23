@@ -41,3 +41,12 @@ genesis_markup( array(
 genesis_structural_wrap( 'site-inner' );
 ?>
 
+<?php if (is_front_page()) : ?>
+  <header>
+    
+  </header>
+<?php else: ?>
+  <header>
+    <!-- Default header -->
+  </header>
+<?php endif; ?>
