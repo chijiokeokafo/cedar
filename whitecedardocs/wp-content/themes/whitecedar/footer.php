@@ -12,28 +12,37 @@
     <h1>CONNECT WITH US</h1>
     <div class="connect">
       <div id="right-column">
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/house.png" alt="" class="address">
-        <p class="address">
-          1366 Yonge St. Suite 208<br />
-          (Yonge and St. Clair)
-        </p>
-        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/email.png" alt="" class="email">
-        <p class="email-address">
-          cannabisdocs.ca<br />
-          @whitecedarclinic
-        </p>
+        <a href="https://goo.gl/maps/NMRDDa9kJC92">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/house.png" alt="" class="address">
+          <p class="address">
+            1366 Yonge St. Suite 208<br />
+            (Yonge and St. Clair)
+          </p>
+        </a>
+
+        <a href="http://cannabisdocs.ca">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/email.png" alt="" class="email">
+          <p class="email-address">
+            cannabisdocs.ca<br />
+            @whitecedarclinic
+          </p>
+        </a>
       </div>
       
       <div id="left-column">
+        <a href="tel:1-844-974-1150">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/phone.png" alt="" class="phone">
           <p class="phone-number">
             844-974-1150<br />
-            <span style="opacity: 0;">gfgfgg</span>
+            <span style="opacity: 0;">spacer</span>
           </p>
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/fax.png" alt="" class="fax">
+        </a>
+        <a href="tel:1-888-974-1149"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/fax.png" alt="" class="fax">
           <p class="fax-number">
             888-974-1149<br />
+            <span style="opacity: 0;">spacer</span>
           </p>
+        </a> 
         </div>
       </div>
       <div class="footer-copy">
@@ -42,7 +51,7 @@
         patient. White Cedar Cannabis Doctors<br />
         is not a marijuana dispensary.</p>
       </div>
-      
+    </div>
   </footer>
 
 
