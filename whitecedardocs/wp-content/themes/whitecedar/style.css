@@ -147,6 +147,12 @@ header.site-header {
 NAVIGATION
 ---------------------------------------------*/
 
+.sub-menu-toggle,
+.menu-toggle {
+	display: none;
+	visibility: hidden;
+}
+
 nav .wrap { max-width: 100%}
 nav.nav-primary{
 	align-items: center;
@@ -194,6 +200,10 @@ nav .genesis-nav-menu .current-menu-item > a {
 nav .genesis-nav-menu a span {
 	text-decoration: none;
 	color: white;
+}
+
+.nav-menu-mobile {
+    display: none;
 }
 
 
@@ -426,6 +436,186 @@ LOCATIONS
 	background-color: #f9f7e3;
 }
 
+
+
+
+
+/*---------------------------------------------
+MOBILE NAV
+// ------------------------------------------*/
+
+
+@media only screen
+and (max-width : 800px) {
+    .nav-menu-mobile {
+        display: block;
+    }
+ 
+    .nav-menu-mobile a{
+        border: solid;
+        padding: 1px;
+    }
+    #menu-404 {
+        display:none;
+    }
+
+    .home-top .copy {
+    	width: 80%;
+    }
+
+    body .site-inner {
+    	padding: 0;
+    }
+
+    .patients-section-one p {
+    	width: 100%;
+    }
+
+    .orange p { width: 100%; }
+
+    .symptoms { column-count: 1; }
+
+    button#portal-btn {
+    	margin: 0 auto;
+	    display: block;	
+	    font-size: 1.2rem;
+	    padding: 10px 16px;
+    }
+
+    .patients-section-one {
+        padding: 30px 50px;
+    }
+	
+	.patients-section-one img {
+		display: block;
+		margin: 0 auto;
+		transform: translateY(0);
+	}
+    .patients-section-one.providers img {
+    	display: block;
+    	margin: 0 auto;
+    	transform: translateY(0);
+    }
+    body.home header.site-header {
+        background-size: cover;
+        height: 129px;
+    }
+
+    .page-header {
+        padding: 30px 30px;
+    }
+	
+	.home-top {
+		height: 760px;
+		background-position: center 100%;
+		padding-bottom: 330px;
+	}
+	.home-top img { display: none; }
+	.home-top .copy { padding-top: 11%; }
+    .home-orange p { width: 83%; }
+    .home-bottom h1 { padding: 10px; }
+
+    .question {
+    	padding-left: 40px;
+    }
+    .answer {
+    	padding-left: 60px;
+    }
+
+    .menu-toggle,
+    	.sub-menu-toggle {
+    		display: block;
+    		font-size: 20px;
+    		font-size: 2rem;
+    		font-weight: 700;
+    		margin: 0 auto;
+    		overflow: hidden;
+    		padding: 20px;
+    		padding: 2rem;
+    		text-align: center;
+    		visibility: visible;
+    	}
+
+    	button.menu-toggle,
+    	button.sub-menu-toggle {
+    		background-color: transparent;
+    		color: #999;
+    	}
+
+    	.sub-menu-toggle {
+    		padding: 18px;
+    		padding: 1.8rem;
+    		position: absolute;
+    		right: 0;
+    		top: 0;
+    	}
+
+    	.menu-toggle:before {
+    		content: "\2261";
+    	}
+
+    	.menu-toggle.activated:before {
+    		content: "\2191";
+    	}
+
+    	.sub-menu-toggle:before {
+    		content: "+";
+    	}
+
+    	.sub-menu-toggle.activated:before {
+    		content: "-";
+    	}
+
+    	nav {
+    		display: none;
+    		position: relative;
+    	}
+
+    	.genesis-nav-menu .menu-item {
+    		background-color: #f5f5f5;
+    		display: block;
+    		position: relative;
+    		text-align: left;
+    	}
+
+    	.genesis-nav-menu .menu-item:hover {
+    		position: relative;
+    	}
+
+    	.genesis-nav-menu .sub-menu {
+    		clear: both;
+    		display: none;
+    		opacity: 1;
+    		position: static;
+    		width: 100%;
+    	}
+
+    	.genesis-nav-menu .sub-menu a {
+    		border-left: 0;
+    		position: relative;
+    		width: auto;
+    	}
+
+    	.genesis-nav-menu .sub-menu .sub-menu {
+    		margin: 0;
+    	}
+
+    	.genesis-nav-menu .sub-menu .sub-menu a {
+    		background-color: #f5f5f5;
+    		padding-left: 30px;
+    	}
+
+    	.genesis-nav-menu .sub-menu .sub-menu .sub-menu a {
+    		background-color: #fff;
+    		padding-left: 40px;
+    	}
+
+    	.nav-primary a:hover,
+    	.nav-primary .current-menu-item > a {
+    		color: #333;
+    	}
+ 
+}
 
 
 

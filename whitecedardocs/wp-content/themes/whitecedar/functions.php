@@ -21,6 +21,13 @@ function genesis_sample_google_fonts() {
 
 }
 
+if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
+function my_jquery_enqueue() {
+   wp_deregister_script('jquery');
+   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, null);
+   wp_enqueue_script('jquery');
+}
+
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
 
@@ -35,6 +42,11 @@ add_theme_support( 'custom-background' );
 
 //* Add support for 3-column footer widgets
 add_theme_support( 'genesis-footer-widgets', 3 );
+
+add_action( 'whitecedar_meta', 'add_viewport_meta_tag' );
+    function add_viewport_meta_tag() {
+    echo '<meta name="viewport" content="width=device-width, initial-scale=1.0"/>';
+}
 
 add_theme_support( 'custom-header' );
 
@@ -58,25 +70,10 @@ function whitecedar_custom_header_setup() {
         // function to produce preview markup in the admin screen
         'admin-preview-callback'    => 'adminpreview_cb',
     );
-    // $args = array(
-    //     'flex-width'    => true,
-    //     'width'         => 1369,
-    //     'flex-height'   => true,
-    //     'height'        => 492,
-    //     'default-image' => get_template_directory_uri() . '/images/header.jpg',
-    // );
     add_theme_support( 'custom-header', $args );
 }
 add_action( 'after_setup_theme', 'whitecedar_custom_header_setup' );
 
-// $args = array(
-//     'flex-width'    => true,
-//     'width'         => 980,
-//     'flex-height'   => true,
-//     'height'        => 352,
-//     'default-image' => get_template_directory_uri() . '/images/header.jpg',
-// );
-// add_theme_support( 'custom-header', $args );
 
 function wpb_hidetitle_class($classes) {
 	if ( is_single() || is_page() ) :
@@ -88,9 +85,13 @@ function wpb_hidetitle_class($classes) {
 
 add_filter('post_class', 'wpb_hidetitle_class');
 
-// if (is_front_page() ) {
-//        get_header( 'front' );
-
-// } else {
-//        get_header('custom-header');
-// }
+// Register responsive menu script
+add_action( 'wp_enqueue_scripts', 'prefix_enqueue_scripts' );
+/**
+ * Enqueue responsive javascript
+ * @author Ozzy Rodriguez
+ * @todo Change 'prefix' to your theme's prefix
+ */
+function prefix_enqueue_scripts() {
+    wp_enqueue_script( 'prefix-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0', true ); // Change 'prefix' to your theme's prefix
+}

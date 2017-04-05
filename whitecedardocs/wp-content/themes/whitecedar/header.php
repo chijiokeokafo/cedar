@@ -39,14 +39,7 @@ genesis_markup( array(
 	'context' => 'site-inner',
 ) );
 genesis_structural_wrap( 'site-inner' );
+
+// wp_nav_menu( array( 'theme_location' => 'primary-mobile', 'menu_class' => 'nav-menu-mobile' ) );
 ?>
 
-<?php if (is_front_page()) : ?>
-  <header>
-    
-  </header>
-<?php else: ?>
-  <header>
-    <!-- Default header -->
-  </header>
-<?php endif; ?>
