@@ -41,5 +41,7 @@ genesis_markup( array(
 genesis_structural_wrap( 'site-inner' );
 
 // wp_nav_menu( array( 'theme_location' => 'primary-mobile', 'menu_class' => 'nav-menu-mobile' ) );
+
+wp_nav_menu( array( 'theme_location' => 'primary-res-navigation', 'menu_class' => 'responsive-navigation' ) );
 ?>
 

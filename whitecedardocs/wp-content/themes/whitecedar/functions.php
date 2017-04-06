@@ -21,12 +21,12 @@ function genesis_sample_google_fonts() {
 
 }
 
-if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
-function my_jquery_enqueue() {
-   wp_deregister_script('jquery');
-   wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js", false, null);
-   wp_enqueue_script('jquery');
-}
+// if (!is_admin()) add_action("wp_enqueue_scripts", "my_jquery_enqueue", 11);
+// function my_jquery_enqueue() {
+//    wp_deregister_script('jquery');
+//    wp_register_script('jquery', "http" . ($_SERVER['SERVER_PORT'] == 443 ? "s" : "") . "://code.jquery.com/jquery-3.2.1.min.js", false, null);
+//    wp_enqueue_script('jquery');
+// }
 
 //* Add HTML5 markup structure
 add_theme_support( 'html5', array( 'search-form', 'comment-form', 'comment-list' ) );
@@ -86,12 +86,19 @@ function wpb_hidetitle_class($classes) {
 add_filter('post_class', 'wpb_hidetitle_class');
 
 // Register responsive menu script
-add_action( 'wp_enqueue_scripts', 'prefix_enqueue_scripts' );
+add_action( 'wp_enqueue_scripts', 'whitecedar_enqueue_scripts' );
 /**
  * Enqueue responsive javascript
  * @author Ozzy Rodriguez
  * @todo Change 'prefix' to your theme's prefix
  */
-function prefix_enqueue_scripts() {
-    wp_enqueue_script( 'prefix-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0', true ); // Change 'prefix' to your theme's prefix
+function whitecedar_enqueue_scripts() {
+    wp_enqueue_script( 'whitecedar-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array( 'jquery' ), '1.0.0', true ); 
 }
+
+
+function whitecedar_responsive_menu() { 
+ 
+     register_nav_menu( 'primary-res-navigation', __( 'White Cedar Responsive Navigation', 'whitecedar' ) );
+ 
+} add_action( 'after_setup_theme', 'whitecedar_responsive_menu' );
