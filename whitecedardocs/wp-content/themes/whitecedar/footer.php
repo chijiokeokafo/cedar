@@ -46,9 +46,9 @@
         </div>
       </div>
       <div class="footer-copy">
-        <p>All physician assessments are covered<br />
-        by OHIP and are free of charge to the<br />
-        patient. White Cedar Cannabis Doctors<br />
+        <p>All physician assessments are covered
+        by OHIP and are free of charge to the
+        patient. White Cedar Cannabis Doctors
         is not a marijuana dispensary.</p>
       </div>
     </div>

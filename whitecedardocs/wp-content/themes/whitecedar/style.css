@@ -267,7 +267,8 @@ header.entry-header { display: none; }
 }
 .home-bottom h1 {
 	color: #004b45;
-	padding: 70px 70px 70px 257px;;
+	padding: 70px 70px 70px 257px;
+	font-family: 'NeueHaasUnicaProBold';
 }
 
 button#portal-btn{
@@ -275,6 +276,71 @@ button#portal-btn{
 }
 button#portal-btn:hover{
 	background-color: #e26846; 
+}
+
+.home-bottom {
+	width: 100%;
+	height: auto;
+	background-color: #faf9e5;
+	
+}
+.home-bottom h1,
+.home-bottom h2 {
+	color: #004b45;
+	padding: 10px 10px 10px 0;
+	font-family: 'NeueHaasUnicaProBold';
+	text-align: left;
+    margin-left: 140px;
+}
+.home-bottom h1 { 
+	padding-top: 100px; 
+	margin-left: 180px;
+	margin-bottom: 40px;
+}
+
+.home-bottom .process {
+	font-family: 'NeueHaasUnicaProMed';
+	font-size: 18px;
+	width: 83%;
+	margin: 0 auto;
+	text-align: center;
+	padding-left: 40px;
+	padding-top: 10px;
+}
+.home-bottom .process p {
+	width: 70%;
+	text-align: left;
+    margin-left: 140px;
+    width: 65%;
+    color: #004b45;
+
+}
+.home-bottom .process img {
+	padding: 40px 20px 20px;
+    float: right;
+    margin-top: -170px;
+}
+.home-bottom .process.education img{ padding-bottom: 70px; }
+.home-bottom .process hr {
+	display: block;
+	margin: 40px auto;
+	width: 80%;
+	border-top: 1px solid #f68f6b;
+}
+.referral:before {
+	content: url("images/process1.png");
+	float: left;
+	margin-top: -50px;
+}
+.assessment:before {
+	content: url("images/process2.png");
+	float: left;
+	margin-top: -50px;
+}
+.education:before {
+	content: url("images/process3.png");
+	float: left;
+	margin-top: -50px;
 }
 /*---------------------------------------------
 FOOTER
@@ -322,16 +388,16 @@ footer a:hover,
 footer a:focus { color: #fff; }
 
 #right-column {
-float: left;
-width: 50%;
-display: block;
-height:inherit;
+	float: left;
+	width: 50%;
+	display: block;
+	height:inherit;
 }
 
 #left-column {
-float: left;
-width: 50%;
-height:inherit;
+	float: left;
+	width: 50%;
+	height:inherit;
 }
 .footer-copy {
 	margin-top: -140px;
@@ -340,6 +406,7 @@ height:inherit;
 	font-size: 110%;
 	font-family: 'NeueHaasUnicaProBold';
 }
+.footer-copy p { width: 50%; }
 .phone-number, 
 .fax-number { margin-top: 10px;}
 
@@ -528,7 +595,7 @@ and (max-width : 800px) {
     }
     body.home header.site-header {
         background-size: cover;
-        height: 129px;
+        height: 144px;
     }
 
     .page-header {
@@ -557,7 +624,8 @@ and (max-width : 800px) {
 
     .home-orange {
     	background-image: url("images/section-head-mobile.png");
-    	padding-top: 10px;
+    	padding-top: 110px;
+    	background-position: center 10.5%;
     }
     .home-orange p {
     	display: block;
@@ -569,7 +637,6 @@ and (max-width : 800px) {
 
     .responsive-navigation.activated {
        display:block;
-       transition: .5s ease-in-out;
     }
 
     .menu-toggle,
@@ -594,7 +661,7 @@ and (max-width : 800px) {
 		background-color: #f9f7e3;
 		// color: #000;
 		color: #004b45;
-		border-bottom: 1px solid #000;
+		// border-bottom: 1px solid #000;
 	}
 
 	.sub-menu-toggle {
@@ -632,7 +699,10 @@ and (max-width : 800px) {
 		display: block;
 		position: relative;
 	}
-	button:hover { 
+	button:hover, 
+	button:active, 
+	button:focus,
+	button:visited { 
 		background-color: #f9f7e3 !important; 
 		color: #004b45;
 	} 
@@ -685,6 +755,117 @@ and (max-width : 800px) {
 	.nav-primary .current-menu-item > a {
 		color: #333;
 	}
- 
+
+	/*---------------------------------------------
+	FOOTER
+	// ------------------------------------------*/
+	.entry{ margin-bottom: 0 !important; }
+	footer {
+		display: table !important;
+		width: 100%;
+	    padding: 60px 0;
+		background-color: #00928a;
+		background-image: none;
+		height: auto;
+		color: white;
+		font-family: 'NeueHaasUnicaProBold';
+	}
+
+	footer .connect {
+		width: 80%;
+		height: 170px;
+		margin: 0 auto;
+		border-right: none;
+	}
+
+	footer h1 {
+		font-family: 'NeueHaasUnicaProBold';
+		font-size: 28px;
+	    text-align: center;
+
+	}
+	footer a {
+		color: #fff;
+		text-decoration: none;
+	}
+	footer a:hover, 
+	footer a:focus { color: #fff; }
+
+	#right-column {
+		float: left;
+		width: 100%;
+		display: block;
+		height:inherit;
+	}
+
+	#left-column {
+		float: left;
+		width: 100%;
+		height:inherit;
+	}
+	.footer-copy {
+		margin: 0 auto;
+		width: 100%;
+		height: auto;
+		font-size: 110%;
+		font-family: 'NeueHaasUnicaProBold';
+	}
+	.footer-copy p {
+		display: block;
+		width: 80%;
+		margin: 0 auto;
+
+	}
+	.phone-number, 
+	.fax-number { margin-top: 10px;}
+
+	.home-bottom {
+		width: 100%;
+		height: auto;
+		background-color: #faf9e5;
+		
+	}
+	.home-bottom h1,
+	.home-bottom h2 {
+		color: #004b45;
+		padding: 10px;
+		font-family: 'NeueHaasUnicaProBold';
+		margin-left: 0;
+		text-align: center
+	}
+
+	.home-bottom h1 { padding-top: 100px; }
+
+	.home-bottom .process {
+		font-family: 'NeueHaasUnicaProMed';
+		font-size: 18px;
+		width: 83%;
+		margin: 0 auto;
+		text-align: center;
+		padding-left: 0;
+	}
+	.home-bottom .process p {
+		width: 100%;
+		text-align: center;
+	    margin-left: 0;
+	    color: #004b45;
+	}
+	.home-bottom .process img {
+		padding: 40px 20px 20px;
+	    margin: 0 auto;
+	    display: block;
+	    float: none;
+	}
+	.home-bottom .process.education img{ padding-bottom: 70px; }
+	.home-bottom .process hr {
+		display: block;
+		margin: 40px auto;
+		width: 80%;
+		border-top: 1px solid #f68f6b;
+	}
+	.referral:before, 
+	.assessment:before, 
+	.education:before { display: none; }
+	.education { padding-bottom: 60px; }
 }
 
