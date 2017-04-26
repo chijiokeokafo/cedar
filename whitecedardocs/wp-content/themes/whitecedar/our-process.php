@@ -1,4 +1,5 @@
 <div class="our-process">
+	<h1>OUR PROCESS</h1>
 	<div class="referral">
 		<h1>REFERRAL</h1>
 		<p>A Healthcare Practitioner must complete our Referral Form and submit all required supporting documentation. Patients unable to obtain a referral should contact us directly. 
