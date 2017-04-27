@@ -108,23 +108,20 @@ HEADER
 ---------------------------------------------*/
 
 header.site-header {
-// 	width: 100%;
-	// height: 500px;
-// 	min-height: 110px;
-// 	margin-top: 20px;
-// 	// margin-left: 100px;
-min-height: 90px;
-/* border-bottom: 1px solid #eee; */
-margin-top: 20px;
+	border: none;
+	margin-bottom: 10px; 
+	min-height: 90px;
+	/* border-bottom: 1px solid #eee; */
+	margin-top: 15px;
 }
 header .wrap { display: none; }
 
 .site-header {
-    
+
 }
 
 body.home header.site-header {
-	background-image: url("images/header.jpg");
+	background-image: url("images/header.svg");
 	background-repeat: no-repeat;
     // background-attachment: fixed;
     background-size: contain;
@@ -133,7 +130,7 @@ body.home header.site-header {
 }
 
 header.site-header {
-	background-image: url("images/sml-logo.png");
+	background-image: url("images/logo-sml.svg");
 	background-repeat: no-repeat;
     // background-attachment: fixed;
     // background-size: contain;
@@ -238,7 +235,8 @@ header.entry-header { display: none; }
 
 .home-top img {
 	position: relative;
-	top: 12%;
+	top: 10%;
+	margin-bottom: 35px;
 	// right: 10%;
 }
 
@@ -254,7 +252,7 @@ header.entry-header { display: none; }
 }
 .home-orange p {
 	display: block;
-	margin: 450px auto 0;
+	margin: 400px auto 0;
 	width: 70%;
 	color: #fff;
 	font-family: 'NeueHaasUnicaProMed';
@@ -364,6 +362,7 @@ footer {
 	background-repeat: no-repeat;
     background-position: right 93%;
 	height: auto;
+    // height: 2880px;
 	color: white;
 	font-family: 'NeueHaasUnicaProBold';
 }
@@ -404,6 +403,11 @@ footer a:focus { color: #fff; }
 	width: 50%;
 	height:inherit;
 }
+#left-column img.fax, 
+#left-column p.fax-number {
+	position: relative;
+	top: -9px;
+}
 .footer-copy {
 	margin-top: -140px;
 	width: 50%;
@@ -424,13 +428,15 @@ PATIENTS
 	background-color: #00928a;
 	font-family: 'NeueHaasUnicaProBold';
 	color: #fff;
-	padding: 30px 80px;
+	padding: 12px 80px;
 }
 
 .page-header h1 {
 	font-family: 'NeueHaasUnicaProBold';
 	color: #fff;
 }
+
+.page-header p { margin: 0 0 12px; }
 
 .patients-section-one {
 	width: 100%;
@@ -541,6 +547,28 @@ LOCATIONS
 MOBILE
 // ------------------------------------------*/
 
+@media only screen
+and (max-width : 1450px) {
+	.home-top .copy,
+	.home-bottom .process p, 
+	.providers.bottom p,
+	.providers.bottom ul {
+	    width: 50%;
+	}
+
+	.home-bottom .process img {
+	    padding: 0px 20px 20px;
+	}
+
+	.home-page-btn { margin: 6% 0 50px 21.5%; }
+
+	footer.footer-holder { 
+		padding-left: 50px; 
+	    padding-bottom: 50px;
+	}
+
+	footer .connect { width: 46.5%; }
+}
 
 @media only screen
 and (max-width : 800px) {
@@ -632,9 +660,8 @@ and (max-width : 800px) {
 
     .our-process { padding-bottom: 30px; }
 
-    .question {
-    	padding-left: 40px;
-    }
+    .question { padding: 10px 30px 1px 25px; }
+    .question h4 { font-size: 100%; }
     .answer {
     	padding-left: 60px;
     }
