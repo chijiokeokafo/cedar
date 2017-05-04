@@ -12,18 +12,16 @@
     <h1>CONNECT WITH US</h1>
     <div class="connect">
       <div id="right-column">
-        <a href="https://goo.gl/maps/NMRDDa9kJC92">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/house.png" alt="" class="address">
+        <a href="mailto:info@cannabisdocs.ca">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/envelope.png" alt="" class="email">
           <p class="address">
-            1366 Yonge St. Suite 208<br />
-            (Yonge and St. Clair)
+            info@cannabisdocs.ca
           </p>
         </a>
 
         <a href="http://cannabisdocs.ca">
-          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/email.png" alt="" class="email">
-          <p class="email-address">
-            cannabisdocs.ca<br />
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social.png" alt="" class="social">
+          <p class="social-handle">
             @whitecedarclinic
           </p>
         </a>
@@ -46,10 +44,7 @@
         </div>
       </div>
       <div class="footer-copy">
-        <p>All physician assessments are covered
-        by OHIP and are free of charge to the
-        patient. White Cedar Cannabis Doctors
-        is not a marijuana dispensary.</p>
+        <p>Please note that White Cedar Medical Cannabis Doctors is not a marijuana dispensary.</p>
       </div>
     </div>
   </footer>

@@ -134,7 +134,7 @@ header.site-header {
 	background-repeat: no-repeat;
     // background-attachment: fixed;
     // background-size: contain;
-    background-position-x: 5.5%;
+    background-position-x: 2.5%;
 	height: 70px;
 	min-height: 70px;
 }
@@ -341,6 +341,11 @@ button#portal-btn:hover{
 	margin-top: -50px;
 }
 
+.education a.grow-wise {
+	color: #6cc4bc;
+	text-decoration: underline;
+}
+
 .home-page-btn {
 	margin: 6% 0 50px 19%;
 
@@ -349,7 +354,9 @@ button#portal-btn:hover{
 FOOTER
 // ------------------------------------------*/
 
-body.home footer { background-position: right 96%; }
+body.home footer,
+body.page-id-11845 footer { background-position: right 99%; }
+
 footer {
 	// position: absolute;
 	// bottom: -2030px;
@@ -360,7 +367,7 @@ footer {
 	background-color: #00928a;
 	background-image: url("images/footer-leaf.png");
 	background-repeat: no-repeat;
-    background-position: right 93%;
+    background-position: right 98%;
 	height: auto;
     // height: 2880px;
 	color: white;
@@ -375,7 +382,10 @@ footer .connect {
     padding-top: 50px;
 }
 
-footer img { float: left; }
+footer img { 
+	float: left; 
+	// width: 26%;
+}
 footer h1 {
 	// position: relative;
 	// top: -42px;
@@ -403,10 +413,15 @@ footer a:focus { color: #fff; }
 	width: 50%;
 	height:inherit;
 }
+#left-column img.phone, 
+#left-column p.phone-number {
+	position: relative;
+	top: -5px;
+}
 #left-column img.fax, 
 #left-column p.fax-number {
 	position: relative;
-	top: -9px;
+	top: -34px;
 }
 .footer-copy {
 	margin-top: -140px;
@@ -418,6 +433,13 @@ footer a:focus { color: #fff; }
 .footer-copy p { width: 50%; }
 .phone-number, 
 .fax-number { margin-top: 10px;}
+
+img.email,
+img.phone,
+img.fax,
+img.social {
+	width: 12%;
+}
 
 /*---------------------------------------------
 PATIENTS
@@ -484,6 +506,8 @@ li {
 	color: #004b45;
 }
 
+.symptoms li { padding: 4px 0px; }
+
 img .med-sym {
     position: relative;
     top: -239px;
@@ -519,6 +543,11 @@ LOCATIONS
 	padding-bottom: 20px; 
 	background-color: #f9f7e3;
 }
+.map p {
+	display: none;
+}
+
+
 
 .menu-responsive-menu-container ul > li {
  
@@ -527,7 +556,6 @@ LOCATIONS
     border-bottom-style: solid;
  
     border-bottom-width: 1px;
- 
 }
  
 .responsive-navigation {
@@ -538,9 +566,33 @@ LOCATIONS
  
      padding: 20px;
      // border-bottom: 1px solid #000;
- 
 }
 
+.locations-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-bottom: 40px;
+}
+.location {
+	margin: 40px 0 0 80px;
+	width: 25%;
+	align-self: center;
+}
+.location h1 { 
+	font-size: 26px; 
+	color: #004b45;
+}
+.location hr {
+    border-top: 1px solid #004b45;
+    width: 80%;
+}
+.map p.show {
+	display: block;
+	margin: 0;
+	color: #004b45;
+}
 
 
 /*---------------------------------------------
