@@ -42,6 +42,7 @@
           </p>
         </a> 
         </div>
+        <hr class="mobile" />
       </div>
       <div class="footer-copy">
         <p>Please note that White Cedar Medical Cannabis Doctors is not a marijuana dispensary.</p>
