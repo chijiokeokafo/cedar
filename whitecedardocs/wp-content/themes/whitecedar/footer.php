@@ -19,10 +19,10 @@
           </p>
         </a>
 
-        <a href="http://cannabisdocs.ca">
+        <a href="https://www.facebook.com/whitecedarmedical/">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/social.png" alt="" class="social">
           <p class="social-handle">
-            @whitecedarclinic
+            @whitecedarmedical
           </p>
         </a>
       </div>
