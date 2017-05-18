@@ -600,6 +600,10 @@ LOCATIONS
 	color: #004b45;
 }
 
+p.wpgmza_infowindow_address {
+	display: inherit !important;
+}
+
 
 /*---------------------------------------------
 MOBILE
